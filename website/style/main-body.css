@@ -1,0 +1,232 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: rgb(28, 16, 40);
+  background-color: linear-gradient(90deg, rgba(22,0,43,1) 0%, rgba(83,44,124,1) 63%);
+  height: 880px;
+}
+
+.s1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  
+}
+
+.s1-left {
+  z-index: 2;
+  max-width: 465px;
+  margin-right: -50px;
+}
+.s1 img{
+  flex: 1;
+  width: 100%;
+  rotate: 2deg;
+  
+}
+
+.s1-middle{
+  flex-grow: 0;
+  position: relative;
+  background-color: rgba(85, 26, 139, 1);
+  width: 50rem;
+  height: 31.25rem;
+
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 40px;
+  box-shadow: 
+  0px 0px 40px rgba(85, 26, 139, 0.45),
+  0px 20px 600px rgba(85, 26, 139, 0.2),
+  0px 40px 1000px rgba(85, 26, 139, 0.15);
+}
+.s1-middle h1 {
+  font-size: 1.25rem;
+  transform: translateX(-10px) translateY(30px);
+  flex: 1;
+  color: white;
+  text-align: center;
+}
+.s1-middle h2 {
+  flex: 1;
+  font-size: 
+  2.5rem;
+  color: rgb(29, 0, 40);
+  transform: translatey(20px);
+}
+.s1-middle h3 { flex: 2;
+  font-size: 6.25rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 
+  0px 0px 40px rgba(255, 255, 255, 0.459),
+  0px 20px 600px rgba(255, 255, 255, 0.2),
+  0px 40px 1000px rgba(255, 255, 255, 0.15);;
+  
+}
+.s1-middle h4 {
+  transform: translatey(-20px);
+  flex: 1;
+  width: 700px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: rgb(29, 0, 40);
+}
+
+.s1-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  
+  margin-left: 10px;
+  width: 400px;
+  font-size: 1.875rem;
+
+}
+
+.insta {
+  margin-bottom: 10px;
+  padding: 6px 15px 3px 15px;
+  color: #551A8B;
+  border-radius: 25%;
+  
+}
+.face {
+  padding: 6px 20px 3px 20px;
+  color: #551A8B;
+  border-radius: 25%;
+  
+}
+.s1-right a:hover {
+  color: white;
+  background-color: #551A8B;
+  text-shadow: 
+  0px 0px 40px rgba(255, 255, 255, 0.459),
+  0px 20px 600px rgba(255, 255, 255, 0.2),
+  0px 40px 1000px rgba(255, 255, 255, 0.15);;
+  box-shadow: 
+  0px 0px 40px rgba(85, 26, 139, 0.4586),
+  0px 20px 600px rgba(85, 26, 139, 0.4),
+  0px 40px 1000px rgba(85, 26, 139, 0.3);
+  
+}
+.s1-right a:active {
+  opacity: .8;
+}
+
+.s1-middle-btns {
+  transform: translatey(-20px);
+  flex: 1;
+  height: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+}
+.btn { 
+  margin-left: 10px;
+  color: #551A8B;
+  padding: .5rem;
+  border-radius: 10px;
+
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+
+  transition: all .1s;
+} 
+.btn:hover {
+  color: white;
+  background-color: #551A8B;
+  text-shadow: 
+  0px 0px 40px rgba(255, 255, 255, 0.459),
+  0px 20px 100px rgba(255, 255, 255, 0.2),
+  0px 40px 300px rgba(255, 255, 255, 0.15);;
+  box-shadow: 
+  0px 0px 40px rgba(85, 26, 139, 0.4586),
+  0px 20px 100px rgba(85, 26, 139, 0.4),
+  0px 40px 300px rgba(85, 26, 139, 0.3);
+  
+}
+.btn:active {
+  opacity: .8;
+}
+
+
+
+@media (max-width: 500px) { 
+  .s1-middle{
+    flex: 1;
+    width: 10rem;
+    height: 5rem;
+  }
+  .s1-middle h1 {
+    font-size: .5rem;
+    transform: translateX(-10px) translateY(30px);
+  }
+  .s1-middle h2 {
+    font-size: .1rem;
+    transform: translatey(20px);
+  }
+  .s1-middle h3 {
+    font-size: .1rem;
+    font-weight: 900;
+  }
+  .s1-middle h4 {
+    transform: translatey(-20px);
+    width: 700px;
+    font-size: .1rem;
+  }
+  .btn { 
+    margin-left: 10px;
+    color: #551A8B;
+    padding: .5rem;
+    border-radius: 10px;
+
+    font-size: .1rem;
+    font-weight: 700;
+
+  } 
+  .s1-left {
+    
+    width: 100px;
+    margin-right: -20px;
+  }
+
+  .s1-right {
+    margin-left: 10px;
+    width: 200px;
+    font-size: .1rem;
+  
+  }
+  
+  .insta {
+    margin-bottom: 10px;
+    padding: 6px 15px 3px 15px;
+    color: #551A8B;
+    border-radius: 25%;
+    
+  }
+  .face {
+    padding: 6px 20px 3px 20px;
+    color: #551A8B;
+    border-radius: 25%;
+    
+  }
+}
